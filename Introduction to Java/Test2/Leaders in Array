@@ -17,3 +17,51 @@ Sample Input 2 :
 13 17 5 4 6
 Sample Output 2 :
 17 6
+
+*******************************************************************************************************************************************
+
+import java.util.Scanner;
+
+
+public class runner{
+
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		int n = s.nextInt();
+                int[] input = new int[n];  
+
+		for(int i=0; i<n; i++) {  
+                //reading array elements from the user   
+                 input[i]=s.nextInt();  
+                }  
+		Solution.leaders(input);
+
+	}
+
+}
+*****************************************************************************************************************************************
+public class Solution {
+
+	public static void leaders(int[] input) {
+	
+		  int len = input.length;
+       
+        
+        for(int i=0; i<len; i++){
+            boolean smaller = true;
+            for(int j = i+1;j<len;j++){
+            if(input[i] < input[j]){
+                smaller = false;
+           
+                break;
+            }
+                }
+            
+            
+            if (smaller){
+                System.out.print(input[i] + " ");
+            }
+        }
+	}
+	
+}

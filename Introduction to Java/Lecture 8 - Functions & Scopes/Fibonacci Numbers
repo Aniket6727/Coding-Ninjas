@@ -1,0 +1,19 @@
+Given a number N, figure out if it is a member of fibonacci series or not. Return true if the number is member of fibonacci series else false.
+Note:
+Fibonacci series is the series of numbers where each number is obtained by adding two previous numbers. The first two numbers in the Fibonacci series are 0 and 1.
+
+
+Input Format :
+Integer N
+Output Format :
+true or false
+Constraints :
+0 <= n <= 10^4
+Sample Input 1 :
+5
+Sample Output 1 :
+true
+Sample Input 2 :
+14
+Sample Output 2 :
+false
